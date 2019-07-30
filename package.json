@@ -1,7 +1,7 @@
 {
   "name": "simpleserver",
   "version": "1.0.0",
-  "description": "SynthegoSimpleServer",
+  "description": "SimpleServer",
   "main": "./src/server.js",
   "scripts": {
     "start": "npm run build && node ./src/server.js",
