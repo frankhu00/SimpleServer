@@ -4,6 +4,12 @@
         "@babel/plugin-proposal-export-default-from",
         "@babel/plugin-proposal-logical-assignment-operators",
         [
+            "@babel/plugin-transform-runtime",
+            {
+              "regenerator": true
+            }
+        ],
+        [
             "@babel/plugin-proposal-optional-chaining",
             {
                 "loose": false

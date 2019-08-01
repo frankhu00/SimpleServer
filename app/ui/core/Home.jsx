@@ -9,7 +9,7 @@ const Home = styled.div`
 export default (props) => {
     return (
         <Home {...props}>
-            Hello World!
+            Hello World!!
         </Home>
     )
 }
