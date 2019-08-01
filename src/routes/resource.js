@@ -34,6 +34,6 @@ router.get('/bundle.js', (req, res, next) => {
     }
 })
 
-router.get(/.+/, express.static(path.join(__dirname, '..', '..', '/dist')))
+router.get(/\/.+/, express.static(path.join(__dirname, '..', '..', '/dist')))
 
 module.exports = router

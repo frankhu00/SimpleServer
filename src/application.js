@@ -20,23 +20,23 @@ if (
         const webpack = require('webpack')
         const webpackConfig = require('../webpack.dev.config')
         const compiler = webpack(webpackConfig)
+        const devMiddleware = require('webpack-dev-middleware')
+        const hmr = require('webpack-hot-middleware')
 
         app.use(
-            require('webpack-dev-middleware')(compiler, {
+            devMiddleware(compiler, {
                 noInfo: true,
                 publicPath: webpackConfig.output.publicPath
             })
         )
-        app.use(require('webpack-hot-middleware')(compiler))
+        app.use(hmr(compiler))
     } catch (err) {
         console.log(err)
     }
 }
 
 app.use('/api', apiRoutes)
-
-// app.use(, ))
-app.use('/dist', resource) //for serving files as gzip
+app.use('/dist', resource) //for serving bundle.js as gzip and other files
 
 app.get(/^((?!(\.js)).)*$/, (req, res) => {
     res.sendFile(path.join(__dirname, '..', '/dist/index.html'))
