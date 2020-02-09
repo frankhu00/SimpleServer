@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "moduleResolution": "node",
+        "jsx": "react",
+        "baseUrl": "./",
+        "paths": {
+            "~app/*": ["app/*"],
+            "~assets/*": ["app/assets/*"],
+            "~ui/*": ["app/ui/*"],
+            "~js/*": ["app/js/*"]
+        }
+    },
+    "exclude": ["node_modules", "lib", "dist"],
+    "typeAcquisition": { "include": ["jest"] }
+}

@@ -57,10 +57,10 @@ var config = {
     resolve: {
         extensions: ['.js', '.jsx'],
         alias: {
-            app: path.resolve(__dirname, 'app'),
-            ui: path.resolve(__dirname, 'app/ui'),
-            assets: path.resolve(__dirname, 'app/assets'),
-            js: path.resolve(__dirname, 'app/js')
+            '~app': path.resolve(__dirname, 'app'),
+            '~ui': path.resolve(__dirname, 'app/ui'),
+            '~assets': path.resolve(__dirname, 'app/assets'),
+            '~js': path.resolve(__dirname, 'app/js')
         }
     }
 }
