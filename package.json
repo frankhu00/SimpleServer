@@ -18,9 +18,9 @@
     "author": "Frank Hu",
     "license": "ISC",
     "dependencies": {
-        "body-parser": "^1.19.0",
+        "body-parser": "^1.20.1",
         "chalk": "^2.4.2",
-        "express": "^4.17.1",
+        "express": "^4.18.2",
         "moment": "^2.24.0",
         "mysql2": "^1.6.5",
         "normalize.css": "^8.0.1",
